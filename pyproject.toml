@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proceduralSettingsWidget"
+authors = [{name = "Gabe Reed", email = "gabrieljreed@gmail.com"}]
+description = "A widget to display and edit settings procedurally."
+dependencies = [
+    "PySide2",
+]
+dynamic = ["version", "readme"]
+
+[tool.setuptools.dynamic]
+version = {attr = "proceduralSettingsWidget.VERSION"}
+readme = {file = "README.md"}

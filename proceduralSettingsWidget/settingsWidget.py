@@ -2,7 +2,7 @@
 
 from PySide2 import QtWidgets, QtCore, QtGui
 
-from . import settingsVariables
+from . import parameters
 from . import inputWidgets
 
 
@@ -36,7 +36,7 @@ class SettingsWidget(QtWidgets.QWidget):
         """Add a variable to the widget."""
         if isinstance(variable, str):
             self.addVariableStr(variable)
-        elif isinstance(variable, settingsVariables.settingsVar):
+        elif isinstance(variable, parameters.settingsVar):
             self.addVariableClass(variable)
 
     def addVariableStr(self, variable):

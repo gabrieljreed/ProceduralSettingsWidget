@@ -1,16 +1,20 @@
 [build-system]
-requires = ["setuptools", "setuptools-scm"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "proceduralSettingsWidget"
+version = "0.0.1"
 authors = [{name = "Gabe Reed", email = "gabrieljreed@gmail.com"}]
 description = "A widget to display and edit settings procedurally."
+keywords = ["settings", "procedural", "widget", "qt", "pyside2", "pyqt"]
+license = {file = "LICENSE"}
+readme = "README.md"
 dependencies = [
     "PySide2",
 ]
-dynamic = ["version", "readme"]
+requires-python = ">=3.6"
 
-[tool.setuptools.dynamic]
-version = {attr = "proceduralSettingsWidget.VERSION"}
-readme = {file = "README.md"}
+[project.urls]
+"Homepage" = "https://github.com/gabrieljreed/ProceduralSettingsWidget"
+"Bug Tracker" = "https://github.com/gabrieljreed/ProceduralSettingsWidget/issues"
